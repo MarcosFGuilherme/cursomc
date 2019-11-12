@@ -88,31 +88,37 @@ public class CursomcApplication implements CommandLineRunner {
 		Cidade c1 = new Cidade(null, "Uberlandia", est1);
 		Cidade c2 = new Cidade(null, "Sao Paulo", est2);
 		Cidade c3 = new Cidade(null, "Campinas", est2);
+		Cidade c4 = new Cidade(null, "Piracicaba", est2);
 		/*
 		 * Inserindo a associacao de [Estado] com [Cidade].
 		 */
 		est1.getCidades().addAll(Arrays.asList(c1));
-		est2.getCidades().addAll(Arrays.asList(c2,c3));
+		est2.getCidades().addAll(Arrays.asList(c2,c3,c4));
 		/*
 		 * Gravando no banco os dados das classes.
 		 */
 		estadoRepository.saveAll(Arrays.asList(est1,est2));
-		cidadeRepository.saveAll(Arrays.asList(c1,c2,c3));
+		cidadeRepository.saveAll(Arrays.asList(c1,c2,c3,c4));
 		/*
 		 * inserindo os dados de [Cliente]
 		 */
-		Cliente cli1 = new Cliente(null, "MAria Silva", "maria@gmail.com", "33344455545", TipoCliente.PESSOAFISICA);
-		
+		Cliente cli1 = new Cliente(null, "Maria Silva", "maria@gmail.com", "33344455545", TipoCliente.PESSOAFISICA);
 		cli1.getTelefones().addAll(Arrays.asList("27363323","93838393"));
 		Endereco e1 = new Endereco(null, "Rua Flores", "300", "Apto 203", "Jardim", "38220834", cli1, c1);
 		Endereco e2 = new Endereco(null, "Avenida Matos", "105", "Sala 800", "Centro", "38777012", cli1, c2);
-		
 		cli1.getEnderecos().addAll(Arrays.asList(e1,e2));
+		
+		Cliente cli2 = new Cliente(null, "Tony Stark", "tony@gmail.com", "11144455999", TipoCliente.PESSOAJURIDICA);
+		cli2.getTelefones().addAll(Arrays.asList("981226068","993435076"));
+		Endereco e3 = new Endereco(null, "Rua Luiz Cosme", "38", "Casa", "Sta Cecilia", "13420163", cli2, c4);
+		Endereco e4 = new Endereco(null, "Rua Sansao Alves dos Santos", "1385", "ap 144", "Brooklin", "04571090", cli2, c2);
+		cli2.getEnderecos().addAll(Arrays.asList(e3,e4));
+		
 		/*
 		 * Gravando no banco os dados das classes.
 		 */
-		clienteRepository.saveAll(Arrays.asList(cli1));
-		enderecoRepository.saveAll(Arrays.asList(e1,e2));
+		clienteRepository.saveAll(Arrays.asList(cli1,cli2));
+		enderecoRepository.saveAll(Arrays.asList(e1,e2,e3,e4));
 		
 	}
 }
