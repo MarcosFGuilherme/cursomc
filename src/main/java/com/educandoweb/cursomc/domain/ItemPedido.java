@@ -3,9 +3,11 @@ package com.educandoweb.cursomc.domain;
 import java.io.Serializable;
 
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 import com.educandoweb.cursomc.domain.pk.ItemPedidoPk;
 
+@Entity
 public class ItemPedido implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
@@ -41,6 +43,15 @@ public class ItemPedido implements Serializable{
 
 	public void setProduto(Produto produto) {
 		id.setProduto(produto);
+	}
+
+	
+	public ItemPedidoPk getId() {
+		return id;
+	}
+
+	public void setId(ItemPedidoPk id) {
+		this.id = id;
 	}
 
 	public Double getDesconto() {
