@@ -8,6 +8,7 @@ import javax.persistence.ManyToOne;
 
 import com.educandoweb.cursomc.domain.Pedido;
 import com.educandoweb.cursomc.domain.Produto;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Embeddable
 public class ItemPedidoPk implements Serializable{
