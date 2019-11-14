@@ -75,6 +75,7 @@ public class DBService {
 		Categoria cat9 = new Categoria(null, "Games");
 		Categoria cat10 = new Categoria(null, "Lazer");
 		
+		
 		/*
 		 * Inserindo os dados iniciais de [Produto].
 		 */
