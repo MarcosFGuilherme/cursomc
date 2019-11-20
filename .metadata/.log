@@ -1,0 +1,69 @@
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:39.966
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:39.970
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2b55ac77[org.springframework.tooling.boot.ls:1.12.0.201910232051(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:39.974
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.399
+!MESSAGE Boot LS startup time from start to initialized: 1422ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.424
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qzbIXpZBisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.446
+!MESSAGE subscribing to classpath changes: sts4.classpath.qzbIXpZB isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.450
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.455
+!MESSAGE subsribers = {sts4.classpath.qzbIXpZB=Send Classpath Notifications(268)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.459
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.462
+!MESSAGE project course ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.466
+!MESSAGE Preparing classpath changed notification course
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.471
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.474
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qzbIXpZB => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.477
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.485
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.493
+!MESSAGE buffering callback sts4.classpath.qzbIXpZB course false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.496
+!MESSAGE executing callback sts4.classpath.qzbIXpZB 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:26:41.518
+!MESSAGE executing callback sts4.classpath.qzbIXpZB SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:27:12.389
+!MESSAGE Preparing classpath changed notification course
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:27:12.394
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:27:12.399
+!MESSAGE buffering callback sts4.classpath.qzbIXpZB course true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:27:12.402
+!MESSAGE executing callback sts4.classpath.qzbIXpZB 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-20 11:27:12.413
+!MESSAGE executing callback sts4.classpath.qzbIXpZB SUCCESS [done]
