@@ -23,6 +23,7 @@ public class TestConfig {
 		dbService.instatiateTestDatabase();
 		return true;
 	}
+	
 	@Bean
 	public  EmailService emailService() {
 		return new MockEmailService();
