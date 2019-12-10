@@ -20,6 +20,7 @@ import com.educandoweb.cursomc.domain.PagamentoComCartao;
 import com.educandoweb.cursomc.domain.Pedido;
 import com.educandoweb.cursomc.domain.Produto;
 import com.educandoweb.cursomc.domain.enums.EstadoPagamento;
+import com.educandoweb.cursomc.domain.enums.Perfil;
 import com.educandoweb.cursomc.domain.enums.TipoCliente;
 import com.educandoweb.cursomc.repositories.CategoriaRepository;
 import com.educandoweb.cursomc.repositories.CidadeRepository;
@@ -161,6 +162,7 @@ public class DBService {
 		cli2.getTelefones().addAll(Arrays.asList("981226068","993435076"));
 		Endereco e3 = new Endereco(null, "Rua Luiz Cosme", "38", "Casa", "Sta Cecilia", "13420163", cli2, c4);
 		Endereco e4 = new Endereco(null, "Rua Sansao Alves dos Santos", "1385", "ap 144", "Brooklin", "04571090", cli2, c2);
+		cli2.addPerfil(Perfil.ADMIN);
 		cli2.getEnderecos().addAll(Arrays.asList(e3,e4));
 		
 		/*
